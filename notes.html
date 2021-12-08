@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body style="background-color: #18191A;">
+  <link rel="stylesheet" href="./src/css/custom.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+  <div class="page-content container note-has-grid pt-3">
+    <a href="index.html" class="nav-link justify-content-center btn-warning text-center rounded-pill d-flex align-items-center px-3 rounded mb-3"><span class="font-14 text-white font-weight-bold">Kembali</span></a>  
+    <ul class="nav nav-pills p-3 mb-3 align-items-center rounded" style="background-color: #3A3B3C">
+          <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link rounded-pill note-link d-flex align-items-center px-2 px-md-3 mr-0 mr-md-2 active" id="all-category"><span class="text-warning">Semua</span></a>
+          </li>
+          <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link rounded-pill note-link d-flex align-items-center px-2 px-md-3 mr-0 mr-md-2" id="note-business"><span class="text-warning">Kerja</span></a>
+          </li>
+          <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link rounded-pill note-link d-flex align-items-center px-2 px-md-3 mr-0 mr-md-2" id="note-social"><span class="text-warning">Pribadi</span></a>
+          </li>
+          <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link rounded-pill note-link d-flex align-items-center px-2 px-md-3 mr-0 mr-md-2" id="note-important"><span class="text-warning">Important</span></a>
+          </li>
+          <li class="nav-item ml-auto">
+              <a href="javascript:void(0)" class="nav-link btn-warning  rounded-pill d-flex align-items-center px-3" id="add-notes"><span class="font-14 text-white">Add Notes</span></a>
+          </li>
+      </ul>
+      <div class="tab-content bg-transparent">
+          <div id="note-full-container" class="note-has-grid row">
+              <div class="col-md-4 single-note-item all-category">
+                  <div class="card card-body dark-cardbg">
+                      <span class="side-stick"></span>
+                      <h5 class="note-title text-truncate w-75 mb-0 text-white" data-noteheading="Password Facebook">Nama makanan kucing <i class="point fa fa-circle ml-1 font-10"></i></h5>
+                      <p class="note-date font-12 text-warning">08 December 2021</p>
+                      <div class="note-content text-white">
+                          <p class="note-inner-content text-white" data-notecontent="">
+                              <ul>
+                                  <li>Royal canin</li>
+                                  <li>Royal canon</li>
+                              </ul>
+                          </p>
+                      </div>
+                      <div class="d-flex align-items-center">
+                          <span class="mr-1"><i class="fa fa-star favourite-note text-muted"></i></span>
+                          <span class="mr-1"><i class="fa fa-trash remove-note text-danger"></i></span>
+                          <div class="ml-auto">
+                              <div class="category-selector btn-group">
+                                  <a class="nav-link dropdown-toggle category-dropdown label-group p-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">
+                                      <div class="category">
+                                          <div class="category-business"></div>
+                                          <div class="category-social"></div>
+                                          <div class="category-important"></div>
+                                          <span class="more-options text-dark"><i class="icon-options-vertical"></i></span>
+                                      </div>
+                                  </a>
+                                  <div class="dropdown-menu dropdown-menu-right category-menu">
+                                      <a class="note-business badge-group-item badge-business dropdown-item position-relative category-business text-success" href="javascript:void(0);">
+                                          <i class="mdi mdi-checkbox-blank-circle-outline mr-1"></i>Kerja
+                                      </a>
+                                      <a class="note-social badge-group-item badge-social dropdown-item position-relative category-social text-info" href="javascript:void(0);">
+                                          <i class="mdi mdi-checkbox-blank-circle-outline mr-1"></i> Pribadi
+                                      </a>
+                                      <a class="note-important badge-group-item badge-important dropdown-item position-relative category-important text-danger" href="javascript:void(0);">
+                                          <i class="mdi mdi-checkbox-blank-circle-outline mr-1"></i> Important
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4 single-note-item all-category note-social" style="">
+                  <div class="card card-body dark-cardbg">
+                      <span class="side-stick"></span>
+                      <h5 class="note-title text-truncate w-75 mb-0 text-white" data-noteheading="Nightout with friends">Alamat Rumah <i class="point fa fa-circle ml-1 font-10"></i></h5>
+                      <p class="note-date font-12 text-warning">01 December 2021</p>
+                      <div class="note-content">
+                          <p class="note-inner-content text-white" data-notecontent="">Jl. Cibolerang barat <br/> Pekanbaru, Jakarta barat <br/> 2092, Indonesia</p>
+                      </div>
+                      <div class="d-flex align-items-center">
+                          <span class="mr-1"><i class="fa fa-star favourite-note text-muted"></i></span>
+                          <span class="mr-1"><i class="fa fa-trash remove-note text-danger"></i></span>
+                          <div class="ml-auto">
+                              <div class="category-selector btn-group">
+                                  <a class="nav-link dropdown-toggle category-dropdown label-group p-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">
+                                      <div class="category">
+                                          <div class="category-business"></div>
+                                          <div class="category-social"></div>
+                                          <div class="category-important"></div>
+                                          <span class="more-options text-dark"><i class="icon-options-vertical"></i></span>
+                                      </div>
+                                  </a>
+                                  <div class="dropdown-menu dropdown-menu-right category-menu">
+                                      <a class="note-business badge-group-item badge-business dropdown-item position-relative category-business text-success" href="javascript:void(0);">
+                                          <i class="mdi mdi-checkbox-blank-circle-outline mr-1"></i>Kerja
+                                      </a>
+                                      <a class="note-social badge-group-item badge-social dropdown-item position-relative category-social text-info" href="javascript:void(0);">
+                                          <i class="mdi mdi-checkbox-blank-circle-outline mr-1"></i> Pribadi
+                                      </a>
+                                      <a class="note-important badge-group-item badge-important dropdown-item position-relative category-important text-danger" href="javascript:void(0);">
+                                          <i class="mdi mdi-checkbox-blank-circle-outline mr-1"></i> Important
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4 single-note-item all-category note-important" style="">
+                  <div class="card card-body dark-cardbg">
+                      <span class="side-stick"></span>
+                      <h5 class="note-title text-truncate w-75 mb-0 text-white" data-noteheading="Launch new template">Password akun Google <i class="point fa fa-circle ml-1 font-10"></i></h5>
+                      <p class="note-date font-12 text-warning">21 May 2021</p>
+                      <div class="note-content">
+                          <p class="note-inner-content text-white" data-notecontent="">email: testing@gmail.com</p>
+                          <p class="note-inner-content text-white" data-notecontent="">passwoed: testingbos123</p>
+                      </div>
+                      <div class="d-flex align-items-center">
+                          <span class="mr-1"><i class="fa fa-star favourite-note text-muted"></i></span>
+                          <span class="mr-1"><i class="fa fa-trash remove-note text-danger"></i></span>
+                          <div class="ml-auto">
+                              <div class="category-selector btn-group">
+                                  <a class="nav-link dropdown-toggle category-dropdown label-group p-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">
+                                      <div class="category">
+                                          <div class="category-business"></div>
+                                          <div class="category-social"></div>
+                                          <div class="category-important"></div>
+                                          <span class="more-options text-dark"><i class="icon-options-vertical"></i></span>
+                                      </div>
+                                  </a>
+                                  <div class="dropdown-menu dropdown-menu-right category-menu">
+                                      <a class="note-business badge-group-item badge-business dropdown-item position-relative category-business text-success" href="javascript:void(0);">
+                                          <i class="mdi mdi-checkbox-blank-circle-outline mr-1"></i>Kerja
+                                      </a>
+                                      <a class="note-social badge-group-item badge-social dropdown-item position-relative category-social text-info" href="javascript:void(0);">
+                                          <i class="mdi mdi-checkbox-blank-circle-outline mr-1"></i> Pribadi
+                                      </a>
+                                      <a class="note-important badge-group-item badge-important dropdown-item position-relative category-important text-danger" href="javascript:void(0);">
+                                          <i class="mdi mdi-checkbox-blank-circle-outline mr-1"></i> Important
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4 single-note-item all-category note-business" style="">
+                  <div class="card card-body dark-cardbg">
+                      <span class="side-stick"></span>
+                      <h5 class="note-title text-truncate w-75 mb-0 text-white" data-noteheading="">List Buat Meeting <i class="point fa fa-circle ml-1 font-10"></i></h5>
+                      <p class="note-date font-12 text-warning">10 November 2021</p>
+                      <div class="note-content">
+                          <p class="note-inner-content text-white" data-notecontent="">Beli white board buat nulis</p>
+                      </div>
+                      <div class="d-flex align-items-center">
+                          <span class="mr-1"><i class="fa fa-star favourite-note text-muted"></i></span>
+                          <span class="mr-1"><i class="fa fa-trash remove-note text-danger"></i></span>
+                          <div class="ml-auto">
+                              <div class="category-selector btn-group">
+                                  <a class="nav-link dropdown-toggle category-dropdown label-group p-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">
+                                      <div class="category">
+                                          <div class="category-business"></div>
+                                          <div class="category-social"></div>
+                                          <div class="category-important"></div>
+                                          <span class="more-options text-dark"><i class="icon-options-vertical"></i></span>
+                                      </div>
+                                  </a>
+                                  <div class="dropdown-menu dropdown-menu-right category-menu">
+                                      <a class="note-business badge-group-item badge-business dropdown-item position-relative category-business text-success" href="javascript:void(0);">
+                                          <i class="mdi mdi-checkbox-blank-circle-outline mr-1"></i>Kerja
+                                      </a>
+                                      <a class="note-social badge-group-item badge-social dropdown-item position-relative category-social text-info" href="javascript:void(0);">
+                                          <i class="mdi mdi-checkbox-blank-circle-outline mr-1"></i> Pribadi
+                                      </a>
+                                      <a class="note-important badge-group-item badge-important dropdown-item position-relative category-important text-danger" href="javascript:void(0);">
+                                          <i class="mdi mdi-checkbox-blank-circle-outline mr-1"></i> Important
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Modal Add notes -->
+      <div class="modal fade" id="addnotesmodal" tabindex="-1" role="dialog" aria-labelledby="addnotesmodalTitle" style="display: none;" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+              <div class="modal-content border-0">
+                  <div class="modal-header bg-warning text-white">
+                      <h5 class="modal-title text-white">Add Notes</h5>
+                      <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">×</span>
+                      </button>
+                  </div>
+                  <div class="modal-body dark-cardbg">
+                      <div class="notes-box">
+                          <div class="notes-content">
+                              <form action="javascript:void(0);" id="addnotesmodalTitle">
+                                  <div class="row">
+                                      <div class="col-md-12 mb-3">
+                                          <div class="note-title">
+                                              <label class="text-white">Note Title</label>
+                                              <input type="text" id="note-has-title" class="form-control" minlength="25" placeholder="Title" />
+                                          </div>
+                                      </div>
+
+                                      <div class="col-md-12">
+                                          <div class="note-description">
+                                              <label class="text-white">Note Description</label>
+                                              <textarea id="note-has-description" class="form-control bg-white" minlength="60" placeholder="Description"></textarea>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="modal-footer dark-cardbg">
+                      <button id="btn-n-save" class="float-left btn btn-success" style="display: none;">Save</button>
+                      <button class="btn btn-danger" data-dismiss="modal">Discard</button>
+                      <button id="btn-n-add" class="btn btn-info" disabled="disabled">Add</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+  <script src="./src/js/index.js"></script>
+  <script>
+    $(document).ready(function() {
+        $('#note-has-description').summernote({
+            height: 300
+        });
+    });
+  </script>
+</body>
+</html>
